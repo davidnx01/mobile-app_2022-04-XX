@@ -1,0 +1,863 @@
+/*== font ==*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap');
+
+/* root settings */
+:root{ 
+    --primary-color: #2E4194;
+    --secondary-color: #1A1E2F;
+    --third-color: #404040;
+    --background-c: #FCFCFC;
+}
+
+    /*====== base =====*/
+html{
+    font-size: 20px;
+    scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar{
+    background: var(--primary-color);
+    width: 5px;
+}
+
+::-webkit-scrollbar-track{
+    background: white;
+}
+
+::-webkit-scrollbar-thumb{
+    background: var(--primary-color);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+body{
+    background: rgb(32, 32, 37);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 945px;    
+}
+#mobile{
+    background-color: var(--background-c);
+    width: 428px;
+    height: 926px;
+    margin: 0 auto;
+    overflow: hidden !important;
+}
+
+#mobil{
+    background-color: var(--background-c);
+    width: 428px;
+    height: 926px;
+    margin: 0 auto;
+    overflow: auto !important;    
+    position: relative;
+}
+
+ul{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+/* 
+    Light - 300
+    Regular - 400
+    Medium - 500
+*/
+
+/* JS CSS */
+
+#navOpen{
+    height: 100vh;
+    width: 25vh;
+    background: var(--primary-color);
+    position: absolute;
+    left: -238px;
+    top: 0;
+    margin: 0;
+    transition: 0.5s ease;
+    z-index: 500;
+    box-shadow: 5px 0 10px rgba(0,0,0,0.2);
+}
+
+.hamburger{
+    left: 0px !important;
+}
+
+.whitehamburger{
+    color: white;
+    animation-delay: 0.5s;
+}
+
+#navOpen ul{
+    padding: 30px;
+    margin-top: 85px;
+}
+
+#navOpen ul li a{
+    padding: 12px 0;
+    margin-top: 12px;
+    font-size: 12px;
+    display: flex;
+    align-items: center;
+}
+
+#navOpen ul li a{
+    color: white;
+}
+
+#navOpen ul li i{
+    color: white;
+    margin-right: 10px;
+    font-size: 20px;
+}
+
+.log_out_ul{
+    margin-top: 50px;
+}
+
+.log_out_ul a{
+    color: white;
+    font-size: 12px;
+    display: flex;
+    align-items: center;
+}
+
+.log_out_ul a i{
+    margin-right: 10px;
+}
+
+.log_out_ul a:hover{
+   opacity: 0.8;
+}
+
+.log_out_ul{
+    position: absolute;
+    bottom: 100px;
+}
+
+/* --------------------- CSS Document --------------------- */
+
+section{
+    padding: 0 30px;
+}
+
+.login_header{
+    margin: 170px 0 25px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.login_header img{
+    width: 100px;
+    margin-bottom: 25px;
+}
+
+.login_header h1{
+    color: var(--primary-color);
+    font-size: 36px;
+    font-weight: 500;
+}
+
+.login_header p{
+    font-size: 12px;
+    font-weight: 400;
+}
+
+label{
+    font-size: 10px;
+    margin-left: 10px;
+    font-weight: 400;
+}
+
+input{
+    background: white;
+    padding: 16px;
+    padding-left: 48px;
+    width: 100%;
+    outline: none;
+    border: none;
+}
+
+.form_input{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    box-shadow: 0px 2px 14px rgba(0,0,0,0.12);
+}
+
+.input_icon{
+    position: absolute;
+    left: 16px;
+    top: 15px;
+    color: var(--primary-color);
+    font-size: 18px;
+}
+
+.login_form_buttons{
+    margin-top: 45px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.login_form_buttons input{
+    background: green;
+    padding: 12px 45px;
+    font-size: 12px;
+    color: white;
+    flex-basis: 25%;
+    background: var(--primary-color);
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.forget{
+    color: var(--secondary-color) !important;
+    background-color: transparent !important;
+}
+
+.login_newacc{
+    position: absolute;
+    bottom: 50px;
+    text-align: center;
+    left: 50%;
+    transform: translate(-50%, 0);
+}
+
+.login_newacc p{
+    font-weight: 300;
+    color: var(--third-color);
+    font-size: 12px;
+}
+
+.login_newacc p span{
+    color: var(--primary-color);
+    font-size: 18px;
+    font-weight: 400;
+    cursor: pointer;
+}
+
+/*==============================HOME====================================*/
+
+nav{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    position: sticky;
+    padding: 0 30px;
+    top: 50px;
+    z-index: 501;
+}
+
+nav i{
+    cursor: pointer;
+    color: black;
+}
+ 
+.home_greeting{
+    margin: 100px 0 35px;
+    text-align: left;
+}
+
+.home_greeting p{
+    font-size: 12px;
+    font-weight: 300;
+    color: var(--secondary-color);
+}
+
+.home_greeting h2{
+    font-size: 24px;
+    font-weight: 500;
+    color: var(--secondary-color);
+}
+
+
+/* categories */
+
+
+.home_categories{
+    padding: 0 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.category i{
+    color: var(--primary-color);
+    font-size: 30px;
+    padding: 10px;
+    border: var(--primary-color) 2px solid;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s ease; 
+}
+
+.category p{
+    font-size: 12px;
+    font-weight: 400;
+    text-align: center;
+    margin-top: 15px;
+    color: var(--third-color);
+}
+
+.category{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.category i:hover{
+    background: var(--primary-color);
+    color: white;
+}
+
+/* recommend_title */
+
+.home_recommend_title{
+    margin-top: 50px;
+}
+
+.home_recommend_title p{
+    font-size: 12px;
+    font-weight: 400;
+    color: var(--third-color);
+}
+
+.home_recommend_title h2{
+    font-size: 22px;
+    font-weight: 500;
+    color: var(--secondary-color);
+    position: relative;
+}
+
+.home_recommend_title h2::before{
+    position: absolute;
+    top: 28px;
+    content: '';
+    width: 50px;
+    height: 5px;
+    background: var(--primary-color);
+    border-radius: 10px;
+}
+
+.recommend_title{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.recommend_title p{
+    cursor: pointer;
+}
+
+.recomment_title p:hover{
+    text-decoration: underline;
+}
+
+/* recommend two */
+
+.recommend_plus_title_zajazdy{
+    padding-bottom: 50px;
+}
+
+.recommend_title_two{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 55px;
+    margin-bottom: 10px;
+}
+
+.recommend_title_two h3{
+    font-size: 18px;
+    color: var(--third-color);
+    font-weight: 500;
+}
+
+.recommend_title_two p{
+    font-size: 12px;
+    font-weight: 300;
+    display: flex;
+    align-items: center;
+}
+
+.recommend_title_two p i{
+    color: var(--primary-color);
+    font-size: 20px;
+    margin-right: 5px;
+}
+
+.turkey_bg{
+    background-image: url(img/turecko.jpg);
+}
+
+.bg{
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    border-radius: 22px;
+    width: 100%;
+    height: 157px;
+    box-shadow: 0px 5px 10px rgba(0,0,0,0.2);
+    margin-bottom: -15px;
+    cursor: pointer;
+    position: relative;
+}
+
+.bg_overlay{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    border-radius: 22px;
+    cursor: pointer;
+    background: linear-gradient(rgba(0, 0, 0, 0.4), #2E4194);
+    opacity: 0;
+    transition: 1s;
+}
+
+.bg:hover .bg_overlay{
+    opacity: 1;
+  }
+
+.bg_heading{
+    width: 80%;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%);
+    opacity: 0;
+    transition: 1s ease;
+}
+
+.bg_heading p{
+    font-size: 14px;
+    width: 80%;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    color: white;
+  }
+
+  .bg_heading h3{
+    margin-bottom: 15px;
+    color: white;
+    font-size: 23px;
+    text-align: center;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .bg:hover .bg_heading{
+    bottom: 25%;
+    opacity: 1;
+  }
+
+.usa_bg{
+    background-image: url(img/Amerika.jpg);
+}
+
+.france_bg{
+    background-image: url(img/Francuzsko.jpg);
+}
+
+.belgium_bg{
+    background-image: url(img/belgium.jpeg);
+}
+
+footer{
+    background: var(--primary-color);
+    padding: 10px 0;
+    border-top-left-radius: 28px;
+    border-top-right-radius: 28px;
+    position: sticky;
+    bottom: 0;
+    box-shadow: 0 0 15px rgba(0,0,0,0.25)
+}
+
+footer div{
+    padding: 0 90px;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    font-size: 26px;
+    color: white;
+}
+
+footer div i{
+    opacity: 0.3;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+footer div i:hover{
+    opacity: 1;
+}
+
+.active_footer{
+    opacity: 1 !important;
+}
+
+
+/*==================================DESTINATION=====================================*/
+
+
+.destination_content{
+    padding: 0 30px;
+    min-height: 926px;
+}
+
+.booking_title{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 125px;
+}
+
+.booking_title h2{
+    font-size: 18px;
+    font-weight: 500;
+    color: var(--secondary-color);
+}
+
+.booking_title i{
+    color: var(--primary-color);
+    font-size: 30px;
+}
+
+.destination_button_choose{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 12px;
+    margin: 25px 0;
+}
+
+.destination_button_choose a{
+    padding: 13px 0;
+    flex-basis: 46%;
+    border-radius: 20px;
+    cursor: pointer;
+    font-weight: 500;
+    text-align: center;
+    background: none;
+    color: var(--secondary-color);
+    font-weight: 400;
+    box-shadow: 0 2px 13px rgba(0,0,0,0.15);
+}
+
+.active_destination_button{
+    background: var(--primary-color) !important;
+    color: white !important;
+    box-shadow: 0 2px 13px rgba(0,0,0,0.15);
+    padding: 13px 0;
+    font-weight: 500 !important;
+}
+
+select{
+    background: white;
+    padding: 16px;
+    padding-left: 48px;
+    width: 100%;
+    outline: none;
+    border: none;
+}
+
+.destination_class_number_choose{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: transparent;
+}
+
+.destination_class_number_choose select{
+    flex-basis: 46%;
+    background: white;
+    padding: 16px;
+    box-shadow: 0 2px 13px rgba(0,0,0,0.15);
+    margin-top: 34px;
+}
+
+.destination_form input[type="submit"]{
+    background: var(--primary-color);
+    margin-top: 25px;
+    border-radius: 30px;
+    width: 100%;
+    text-align: center;
+    padding: 16px;
+    color: white;
+    font-weight: 500;
+    font-size: 12px;
+}
+
+
+/*==================================BOOKING=====================================*/
+
+
+header{
+    height: 250px;
+    width: 100%;
+    padding-top: 50px;
+    background: linear-gradient(to bottom, rgba(0,0,0,0.1), rgba(0,0,0,0.5)), url(img/turecko.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-bottom-right-radius: 36px;
+    border-bottom-left-radius: 36px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.12);
+    position: relative;
+}
+
+.header-content{
+    padding: 0 30px;
+    color: white;
+    position: absolute;
+    bottom: 15px;
+}
+
+.header-content p{
+    font-size: 10px;
+    font-weight: 300;
+}
+
+.header-content h2{
+    font-size: 38px;
+    font-weight: 500;
+    margin-top: -5px;
+}
+
+.header-content-inline{
+    display: flex;
+    align-items: center;
+    margin-top: 5px;
+}
+
+.header-content-inline p{
+    font-size: 10px;
+    margin-left: 5px;
+}
+
+.header-content-inline div{
+    display: flex;
+    align-items: center;
+    margin-right: 10px;
+}
+
+.white_nav_icon{
+    color: white;
+}
+
+.destination_content_booking{
+    padding-top: 50px;
+    padding-right: 50px;
+    padding-left: 0;
+    flex-basis: 80%;
+}
+
+.destination_booking_box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background: white;
+    text-align: center;
+    box-shadow: 2px 3px 12px rgba(0,0,0,0.1);
+    width: 100%;
+    padding: 22px 0;
+    border-radius: 16px;
+    margin-top: 25px;
+}
+
+.destination_booking_box i, .destination_booking_box span{
+    color: var(--primary-color);
+    font-weight: 500;
+}
+
+.destination_booking_box span{
+    margin-top: 5px;
+    font-size: 16px;
+}
+
+.destination_booking_box i{
+    font-size: 45px;
+}
+
+.destination_booking_box h3{
+    margin: 5px 0;
+    color: var(--third-color);
+    font-size: 22px;
+    font-weight: 400;
+}
+
+.destination_booking_box p{
+    font-size: 12px;
+    color: #6C6C6C;
+    font-weight: 300;
+    margin-bottom: 5px;
+}
+
+.destination_content_booking input{
+    margin-top: 50px;
+    background: var(--primary-color);
+    text-align: center;
+    padding: 16px;
+    border-radius: 20px;
+    color: white;
+    font-weight: 500;
+}
+
+.destination_vertical_design{
+    position: relative;
+    content: '';
+    height: 550px;
+    width: 3px;
+    border-radius: 50px;
+    margin: 125px auto 0;
+    border-right: #dfdfdf 3px dashed;
+}
+
+.destination_content_wrapper{
+    display: flex;
+    justify-content: space-between;
+}
+
+.dot_active{
+    content: '';
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    top: 0;
+    right: 50%;
+    left: 50%;
+    background: var(--primary-color);
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 4;
+}
+
+.dot_active:before{
+    content: '';
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    background: white;
+    z-index: 5;
+    right: 50%;
+    left: 50%;
+    top: 15px;
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.dot_second{
+    content: '';
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    top: 205px;
+    right: 50%;
+    left: 50%;
+    background: #aaaaaa;
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 4;
+}
+
+.dot_second:before{
+    content: '';
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    background: var(--primary-color);
+    z-index: 5;
+    right: 50%;
+    left: 50%;
+    top: 15px;
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.dot_third{
+    content: '';
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    top: 415px;
+    right: 50%;
+    left: 50%;
+    background: #aaaaaa;
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 4;
+}
+
+.dot_third:before{
+    content: '';
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    background: var(--primary-color);
+    z-index: 5;
+    right: 50%;
+    left: 50%;
+    top: 15px;
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.booking_vyhladat{
+    background: var(--primary-color);
+    padding: 16px;
+    color: white;
+    font-weight: 500;
+    width: 80%;
+    border-radius: 32px;
+    margin: 25px auto;
+    text-align: center;
+}
+
+.input_submit_center{
+    margin-top: 25px auto;
+    width: 100%;
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="sk">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BOOKING</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+</head>
+<body>
+<div id="mobile">
+    <div id="mobil">
+        <nav id="navBar">
+            <i class="ri-menu-line" onclick="navOpen()" id="whiteHamburger"></i>
+            <i class="ri-notification-2-fill"></i>
+        </nav>            
+
+        <div id="navOpen">
+            <ul>
+                <li><a href="index.html"><i class="ri-login-box-fill"></i>PRIHLÁSENIE</a></li>
+                <li><a href="home.html"><i class="ri-home-5-fill"></i>DOMOV</a></li>
+                <li><a href="destination.html"><i class="ri-flight-land-line"></i>DESTINÁCIE</a></li>
+                <li><a href="booking.html"><i class="ri-bookmark-fill"></i>REZERVÁCIE</a></li>
+                <div class="log_out_ul"><a href="index.html"><i class="ri-logout-circle-line"></i> ODHLÁSIŤ SA</a></div>
+            </ul>
+            </div>
+
+        <!-- DESTINATION CONTENT -->
+
+        <div class="destination_content">
+            <div class="booking_title">
+                <h2>Zarezervujte si<br>
+                Váš let</h2>
+                <i class="ri-plane-line"></i>
+            </div>
+
+            <div class="destination_button_choose">
+                <a href="#" class="active_destination_button">JEDNOSMERNÁ</a>
+                <a href="#" >SPIATOČNÁ&nbsp;CESTA</a>
+            </div>
+
+            <div class="destination_form">
+            <form>
+                <label for="email">E-MAILOVÁ ADRESA</label><br>
+                    <div class="form_input">
+                        <i class="ri-checkbox-blank-circle-fill input_icon"></i>
+                        <select id="cars" name="carlist" form="carform">
+                            <option value="Bratislava">Bratislava</option>
+                            <option value="Viedeň">Viedeň</option>
+                            <option value="Praha">Praha</option>
+                            <option value="Košice">Košice</option>
+                        </select>
+                 </div>
+
+                <label for="heslo">HESLO</label><br>
+                    <div class="form_input">
+                        <i class="ri-checkbox-blank-circle-fill input_icon"></i>
+                        <select id="cars" name="carlist" form="carform">
+                            <option value="Viedeň">Viedeň</option>
+                            <option value="Istanbul">Istanbul</option>
+                            <option value="Dublin">Dublin</option>
+                            <option value="Paríž">Paríž</option>
+                        </select>
+                </div>
+
+                <label for="heslo">DÁTUM A ČAS</label><br>
+                    <div class="form_input">
+                        <i class="ri-checkbox-blank-circle-fill input_icon"></i>
+                        <input type="date" value="2022-01-01" min="2022-01-01" max="2022-12-31">
+                </div>
+
+                <div class="destination_class_number_choose">
+                    <select id="cars" name="carlist" form="carform" name="Trieda">
+                        <option value="Economy">Economy Class</option>
+                        <option value="Business">Business Class</option>
+                        <option value="First">First Class</option>
+                    </select>
+               
+
+                    <select id="cars" name="carlist" form="carform">
+                        <option value="1m">1 Miestna</option>
+                        <option value="2m">2 Miestna</option>
+                        <option value="3m">3 Miestna</option>
+                        <option value="4m">4 Miestna</option>
+                    </select> 
+                </div><!--destination_class_number_choose-->
+                    <input type="submit" value="VYHĽADAŤ">
+            </div><!--destination_form-->
+            </form>
+        </div><!--destination_content-->
+
+        <!--FOOTER-->
+
+            <footer>
+                <div>
+                    <i class="ri-home-4-fill active_footer"></i>
+                    <i class="ri-user-fill"></i>
+                    <i class="ri-settings-4-fill"></i>
+                    <i class="ri-question-fill"></i>
+                </div>
+            </footer>
+        </div><!--mobil-->
+    </div><!--#MOBILE-->
+
+
+<script src="js.js">
+
+
+</script>
+</body>
+</html>
